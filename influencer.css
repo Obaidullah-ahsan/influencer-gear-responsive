@@ -84,15 +84,70 @@ header {
 
 .header-section-img {
     width: 40%;
-    padding: 20px;
     background-image: url(images/Circle\ design.svg);
     background-repeat: no-repeat;
     background-size:420px 420px;
     background-attachment: scroll;
 }
 .header-section-img img{
-    width: 390px;
+    width: 386px;
     position: relative;
-    top: 20px;
-    right: 20px;
+    top: 10px;
+    right: 10px;
+    margin: 25px;
+}
+
+.sponsor-img-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 160px;
+    margin-bottom: 100px;
+}
+
+
+@media screen and (max-width:576px) {
+    .navbar {
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-title{
+        margin: 30px;
+    }
+    .navbar>ul {
+        gap: 25px;
+    }
+    header {
+        margin: 0 ;
+        margin-left: 20px;
+    }
+
+    .header-section {
+        flex-direction: column-reverse;
+        margin-top: 50px;
+        align-items: center;
+    }
+    .header-section-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-section-title{
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .header-section-description{
+        text-align: center;
+        width: 321px;
+    }
+    .header-section-img {
+        width: 90%;
+        background-size:95% 95%;
+    }
+    .sponsor-img-container{
+        padding: 30px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 30px;
+    }
 }
